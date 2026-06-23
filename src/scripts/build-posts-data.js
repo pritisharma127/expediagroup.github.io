@@ -26,5 +26,6 @@ const {writeJsonFile} = require("./filesystem/fs-utils");
  */
 exports.fetchAndDumpPosts = async (rssUrl = EXPEDIA_MEDIUM_RSS_URL, filePath = 'static/posts.json') => {
     const posts = await getMediumPostsFromRss(rssUrl)
+    console.log("This is a test log");
     await writeJsonFile(filePath, posts)
 }
