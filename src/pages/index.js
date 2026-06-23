@@ -27,6 +27,7 @@ function Home() {
   const context = useDocusaurusContext();
   const {siteConfig} = context;
   const {heroConfig, repositoriesConfig, socialConfig} = siteConfig.customFields;
+  var v = 1;
   return (
     <Layout
       title={siteConfig.title}
